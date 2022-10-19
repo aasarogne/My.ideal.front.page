@@ -21,7 +21,6 @@ font-size: 1rem;
 
 img {
     color: azure;
-   
 }
 
 body {
@@ -44,7 +43,12 @@ footer {
 display: inline;
 
 
-} 
+}  
+
+main { 
+    width: 1050px;
+    margin: 0px auto;
+}
 
 .lenker{
 display: flex;
@@ -70,12 +74,17 @@ p{
     margin: 1rem;
     font-size: 1rem;
     max-height: 150px;
+    padding: 13px;
 }
 
 
-div{
-    
-    display: inline-flex;
+.flex-row{
+    display: flex;
+}
+
+.flex-colum {
+    display: grid;
+    margin-left: 64px;
 }
 
 .flex-container {
@@ -87,5 +96,70 @@ div{
 
 .bilde-box {
 height: 100px;
-width: 300px;
+width: 110px;
+margin-right: 120px;
+}
+
+.konto {
+    
+
+}
+
+.margin-box-p{
+    margin-left: 30px;
+}
+
+.lagre {
+    margin-left: 184px;
+}
+
+@media only screen and (max-width:600px) { 
+    main {
+        width: 780px;;
+    }
+
+    h1 {
+        font-size: 28px;
+        width: 350px;
+        margin-left: 16px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .lenker {
+        display: none;
+    }
+
+    .flex-colum {
+        display: grid;
+        margin-left: 69px;
+    }
+
+    .bilde-box {
+        margin-top: 16px;
+        margin-left: 50px;
+        margin-right: 0px;
+    }
+
+    .flex-colum {
+        display: grid;
+        margin-left: -21px;
+    }
+
+
+    .lagre {
+        margin-left: 125px;
+    }
+
+    .margin-box-p {
+        margin-left: 10px;
+    }
+
+    .box_fem {
+        width: 350px;
+        margin-left: 16px;
+    }
+
 }

@@ -1,25 +1,34 @@
-<!DOCTYPE html> <!--html 5 -verson-->
-<html lang="no"> <!--startt - definere språk-->
-    <head> <!--head vises ikke på nettsiden-->
-        <meta charset="UTF-8"> <!--hvilke tastatur - æøå-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<!--html 5 -verson-->
+<html lang="no">
+<!--startt - definere språk-->
 
-        <title>Swapper</title> <!--tittel- navn på nettleseren-->
-        <link rel="stylesheet" href="../assets/logo_swap">
-        <link rel="stylesheet" href="./style.css" type="text/css" >
+<head>
+    <!--head vises ikke på nettsiden-->
+    <meta charset="UTF-8">
+    <!--hvilke tastatur - æøå-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Swapper</title>
+    <!--tittel- navn på nettleseren-->
+    <link rel="stylesheet" href="../assets/logo_swap">
+    <link rel="stylesheet" href="./style.css" type="text/css">
 
 
-    </head>
-    <body> <!-- vises på nettsidn - alt som er synelig-->
-        <header>
-            <img src="/assets/Logo/logo_swap.svg">
+</head>
 
-     
-             
-       
+<body>
+    <!-- vises på nettsidn - alt som er synelig-->
+    <header>
+        <img src="/assets/Logo/logo_swap.svg">
+
+
+
+
         <nav>
-            <ul class="lenker"> <!--liste med lenker -->
-            
+            <ul class="lenker">
+                <!--liste med lenker -->
+
                 <li>Hjem</li>
 
                 <li>Møbler</li>
@@ -33,92 +42,99 @@
                 <li>Klær</li>
 
                 <li>Mat</li>
-                
-                <li>melding-ikon</li>
-                <li>søke-ikon</li>
-                <li> varsel-ikon</li>
-                
+
                 </li>
-            
+
 
             </ul>
 
         </nav>
 
-        <img src="./assets/Ikoner/konto-ikon.svg" class="hamburger">
+
+
+
+        <img src="./assets/Ikoner/konto-ikon.svg" class="konto">
+        <img src="./assets/Ikoner/søkefelt-ikon.svg" class="søkefelt">
+        <img src="./assets/Ikoner/varslings-ikon.svg" class="varsling">
         <img src="./assets/Ikoner/hamburger-ikon.svg" class="hamburger">
-   
 
-         </header>
-         
-   <main> 
+    </header>
 
-         <h1>Flere anbefalinger for deg</h1>
+    <main>
+
+        <h1>Flere anbefalinger for deg</h1>
         <div class="flex-container">
-            <div class="box_en">
-               <div>
-                 <p> Rød stekepanne <br><br><br>
-                    Majorstua, Oslo<br> <br>
-                    Tilgjengelig for Swap
-                </p>
-                <img src="/assets/Bilder/Rød-Stekepanne.jpg" class="bilde-box">
-                 </div>
-
-            </div>
-
-            <div class="box_en">
-                <div>
-                       <p> Dobbeltseng</p>
-                       <img src="/assets/Bilder/Dobbeltseng.png" class="bilde-box">
-
-
-                </div>
-             
-
-            </div>
-
-            <div class="box_en">
-                <div>
-                    <p>
-                        Brun sofia i lær <br> <br> <br> <!--br: linebreak-->
-                        Bjørvika, Oslo <br> <br>
-                        Tilgjengelig for Swap
-                    </p>
-                    <img src="/assets/Bilder/Brun-Lærsofa.jpg" class="bilde-box">
-                </div>
-
-            </div>
             
+
+            
+
             <div class="box_en">
-                <div>
-                    <p>
-                        Trillebåre <br> <br>
+                <div class="flex-row">
+                    <p class="margin-box-p"> Rød kjele <br><br>
+                        Majorstua, Oslo<br> 
+                        Tilgjengelig for Swap</p>
+                    <div class="flex-colum"> 
+                        <img src="./assets/Ikoner/lagret-swap.svg" class="lagre">
+                        <img src="/assets/Bilder/Rød-Stekepanne.jpg" class="bilde-box">
+                    </div>
+                </div>
+            </div>
+            <div class="box_en">
+                <div class="flex-row">
+                    <p class="margin-box-p"> Brun sofia i lær <br> <br>
+                        <!--br: linjebreak-->
+                        Bjørvika, Oslo <br>
+                        Tilgjengelig for Swap</p>
+                    <div class="flex-colum"> 
+                        <img src="./assets/Ikoner/lagret-swap.svg" class="lagre">
+                        <img src="/assets/Bilder/Brun-Lærsofa.jpg" class="bilde-box">
+                    </div>
+                </div>
+            </div>
+            <div class="box_en">
+                <div class="flex-row">
+                    <p class="margin-box-p"> Dobbeltseng
+                        Nydalen, Oslo 
+                        Tilgjengelig for Swap 22.10.22
+
+                    </p>
+                    <div class="flex-colum"> 
+                        <img src="./assets/Ikoner/lagret-swap.svg" class="lagre">
+                        <img src="/assets/Bilder/Dobbeltseng.png" class="bilde-box">
+                    </div>
+                </div>
+            </div>
+            <div class="box_en">
+                <div class="flex-row">
+                    <p class="margin-box-p"> Trillebåre <br> <br>
                         Smedstad, Oslo <br> <br>
                         Tilgjengelig for Swap
-
-                    </p>
-                    <img src="/assets/Bilder/Trillebår.jpg" class="bilde-box">
+                        </p>
+                    <div class="flex-colum"> 
+                        <img src="./assets/Ikoner/lagret-swap.svg" class="lagre">
+                        <img src="/assets/Bilder/Trillebår.jpg" class="bilde-box">
+                    </div>
                 </div>
             </div>
+        </div>
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <section class="box_fem">
+            <div>
+                <p>
+                    Se flere anbefalinger
+                </p>
+
             </div>
-            
-
-
-
-
-
-
-         </main>
-         <footer>
-            <section class="box_fem">
-                <div>
-                    <p>
-                        Se flere anbefalinger
-                    </p>
-
-                </div>
-            </section>
-         </footer>
-    </body>
+        </section>
+    </footer>
+</body>
 
 </html>
